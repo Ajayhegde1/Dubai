@@ -1,0 +1,32 @@
+.phone-verification-container input,
+.phone-verification-container button {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.phone-verification-container input[type="text"],
+.phone-verification-container button {
+  padding: 5px;
+}
+
+.phone-verification-container input[type="text"],
+.phone-verification-container button,
+.phone-verification-container a {
+  font-size: 16px;
+}
+
+.phone-verification-container a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* CSS for OTP container */
+.otp-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.otp-container.show {
+  max-height: 100px; /* Adjust the value as per your requirement */
+}
