@@ -4,7 +4,7 @@ import { PhoneVerification } from "@/components/Landing/PhoneVerification/PhoneV
 
 export default function Landing() {
   return (
-    <section className="h-[100vh] w-[100vw] flex items-center flex-col space-y-10">
+    <section className="h-[100vh] w-[100vw] flex items-center flex-col space-y-20">
       <div className="absolute inset-0 w-full h-full">
     <video className="w-full h-full object-cover fixed inset-0 z-0" autoPlay loop muted>
       <source src="/dubai.mp4" type="video/mp4" />
