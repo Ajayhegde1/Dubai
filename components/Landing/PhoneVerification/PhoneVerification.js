@@ -27,7 +27,7 @@ export function PhoneVerification() {
         onChange={handlePhoneNumberChange}
       />
       <button
-        className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105"
+        className="mb-4 px-4 py-2x bg-blue-500  text-white rounded hover:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105 "
         onClick={handleGenerateOTP}
       >
         Generate OTP
@@ -47,7 +47,8 @@ export function PhoneVerification() {
         </>
       )}
       <a
-        className="block text-center text-blue-500 hover:text-blue-600 transition duration-500 ease-in-out transform hover:scale-105 mt-[10px]"
+        className="block text-center text-white
+         hover:font-900  font-[600] transition duration-500 ease-in-out transform hover:scale-105 mt-[10px]"
         href="#"
       >
         Already registered? Click here to login
