@@ -35,7 +35,7 @@ export function InfoCard() {
     <section className=" w-full h-[30vh] flex justify-center">
       <div className="ast w-[98%] h-full rounded-xl shadow-lg drop-shadow-xl">
         <div className="h-[30%] w-full border-b-2 border-gray-500">
-          <h1 className="text-[50px] font-[700] px-[1vw]">Welcome Manoj</h1>
+          <h1 className="text-[50px] font-[700] px-[1vw]  text-blue-900">Welcome Manoj</h1>
         </div>
         <div className="flex h-[70%]">
           <div className="w-[70%] h-full  grid grid-cols-2 px-[1vw]">
