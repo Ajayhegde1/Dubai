@@ -37,7 +37,9 @@ export default function HomePage() {
           <InfoCard />
           <FeedSection />
         </div>
-        <div className="w-[20vw] h-[100vh] bg-[#DAFCFF]"></div>
+        <div className="w-[20vw] h-[100vh] bg-[#DAFCFF]">
+          <RightSideDiv />
+        </div>
       </section>
     </>
   );
