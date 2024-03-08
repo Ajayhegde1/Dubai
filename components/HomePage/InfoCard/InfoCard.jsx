@@ -1,10 +1,39 @@
+"use client";
 import { homePageStyles } from "@/app/Styles/HomePageStyles";
 import progBgImg from "@/public/profbg.png";
 import Image from "next/image";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
 export function InfoCard() {
+  // const cardRef = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".ast",
+          start: "top top",
+          scrub: true,
+          // markers:true,
+        },
+      })
+      .from(".ast", {
+        position: "relative",
+      })
+      .to(".ast", {
+        position: "fixed",
+        // top:0,
+        zIndex: 100,
+        duration: 200,
+        ease: 5,
+        scaleX: 1.05,
+      });
+  }, []);
   return (
-    <section className="w-full h-[30vh] flex justify-center">
-      <div className="w-[98%] h-full  rounded-xl  shadow-lg drop-shadow-xl">
+    <section className=" w-full h-[30vh] flex justify-center">
+      <div className="ast w-[98%] h-full rounded-xl shadow-lg drop-shadow-xl">
         <div className="h-[30%] w-full border-b-2 border-gray-500">
           <h1 className="text-[50px] font-[700] px-[1vw]">Welcome Manoj</h1>
         </div>
