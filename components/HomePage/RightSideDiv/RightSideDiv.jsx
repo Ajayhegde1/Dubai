@@ -1,6 +1,7 @@
 import { homePageStyles } from "@/app/Styles/HomePageStyles";
 import React, { useState, useEffect } from "react";
 import { AccordionRightSideDiv } from "../AccordionRightSideDiv/AccordionRightSideDiv";
+import CountDownTimer from "../CountDownTimer/CountDownTimer";
 
 export function RightSideDiv() {
   const targetDate = new Date("January 1, 2025 00:00:00"); // Target date: New Year's Day 2025
@@ -32,39 +33,42 @@ export function RightSideDiv() {
   });
 
   return (
-    <>
-      <div className="countdown-timer">
-        <div className="countdown-days flex justify-center">
-          <h2 className={`${homePageStyles.countDownStyle} flex items-end`}>
-            {timeLeft.days}
-          </h2>
+    <section className="flex justify-center items-center h-full">
+      <section className="flex rounded-[20px] bg-white flex-col items-center h-[98%] w-[85%] border-[2px] py-[3vh] px-[1vw] gap-11 ">
+        <div className="countdown-timer border-[#4A90E2] shadow-[#4A90E2] shadow-xl border-[15px] rounded-full h-[30vh] w-[30vh] flex flex-col justify-center">
+          <div className="countdown-days flex justify-center">
+            <h2 className={`${homePageStyles.countDownStyle} flex items-end`}>
+              {timeLeft.days}
+            </h2>
 
-          <div className="flex items-center ">
-            {" "}
-            <p className="text-[25px] font-[500]">Days</p>
+            <div className="flex items-center ">
+              {" "}
+              <p className="text-[25px] font-[500]">Days</p>
+            </div>
+          </div>
+          <div
+            className={`${homePageStyles.countDownStyleSmallerIntervals}countdown-intervals flex justify-center`}
+          >
+            <div className="flex">
+              <h3>{timeLeft.hours}</h3>
+              <p>:</p>
+            </div>
+            <div className="flex">
+              <h3>{timeLeft.minutes}</h3>
+              <p>:</p>
+            </div>
+            <div className="flex">
+              <h3>
+                {timeLeft.seconds < 10
+                  ? `0${timeLeft.seconds}`
+                  : timeLeft.seconds}
+              </h3>
+            </div>
           </div>
         </div>
-        <div
-          className={`${homePageStyles.countDownStyleSmallerIntervals}countdown-intervals flex justify-center`}
-        >
-          <div className="flex">
-            <h3>{timeLeft.hours}</h3>
-            <p>:</p>
-          </div>
-          <div className="flex">
-            <h3>{timeLeft.minutes}</h3>
-            <p>:</p>
-          </div>
-          <div className="flex">
-            <h3>
-              {timeLeft.seconds < 10
-                ? `0${timeLeft.seconds}`
-                : timeLeft.seconds}
-            </h3>
-          </div>
-        </div>
-      </div>
-      <AccordionRightSideDiv />
-    </>
+        {/* <CountDownTimer /> */}
+        <AccordionRightSideDiv />
+      </section>
+    </section>
   );
 }

@@ -1,0 +1,81 @@
+/* PomodoroTimer.css */
+
+.pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .pomodoro-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pomodoro-painel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 20rem;
+    margin-block: 5rem;
+    padding: 1rem;
+    border-radius: 10rem;
+  }
+  
+  .pomodoro-text {
+    opacity: 0.8;
+    transition: 1s ease-in;
+  }
+  
+  .pomodoro-text.active {
+    opacity: 1;
+    color: var(--color-secondary);
+  }
+  
+  .pomodoro-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+  }
+  
+  .pomodoro-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+  }
+  
+  .pomodoro-time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .pomodoro-time-text {
+    font-size: 5.6rem;
+  }
+  
+  .pomodoro-controls {
+    margin-top: 3rem;
+  }
+  
+  .pomodoro-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .pomodoro-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

@@ -51,7 +51,7 @@ export default function SuccessScreen() {
       <p className="text-gray-600">Kindly wait for our team to revert back.</p>
       {showMessage && (
         <a
-          href="/gg"
+          href="/V1/Landing"
           className="text-blue-500 cursor-pointer"
           onClick={handleProceed}
         >

@@ -5,29 +5,37 @@ export function FeedSection() {
   const feedItems = [
     {
       id: 1,
-      user: "user1",
-      content: "This is a post.",
+      user: "User1",
+      content: "Post1",
       imageUrl: oneImg,
     },
     {
       id: 2,
-      user: "user2",
-      content: "Another post.",
+      user: "User2",
+      content: "Post2",
+      imageUrl: oneImg,
+    },
+    {
+      id: 3,
+      user: "User3",
+      content: "Post3",
       imageUrl: oneImg,
     },
     // Add more sample data as needed
   ];
   return (
-    <section className="w-full bg-gray-100 py-6">
-      <div className="w-full md:w-[75%] lg:w-[50%] xl:w-[40%] mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-6">
-          What's Happening in Dubai?
-        </h1>
-        <div className="space-y-6 ">
+    <section className="w-full bg-[#F4F5F6]] py-6">
+      <div className="w-full flex flex-col mx-auto justify-center align-middle  ">
+        <div className="w-full">
+          <h1 className="text-3xl font-bold text-center mb-6 w-full text-blue-900">
+            What's Happening in Dubai?
+          </h1>
+        </div>
+        <div className="space-y-6 flex flex-col items-center">
           {feedItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden w-[50vw] ml-[-14vw]"
+              className="bg-white rounded-lg shadow-md overflow-hidden w-[50vw] "
             >
               <div className="p-4">
                 <div className="flex items-center space-x-4">
@@ -40,7 +48,7 @@ export function FeedSection() {
                   />
                   <div>
                     <p className="font-semibold">{item.user}</p>
-                    <p className="text-gray-500">Date and Time</p>
+                    <p className="text-gray-500">2024-03-08 12:00:01</p>
                   </div>
                 </div>
                 <p className="mt-2">{item.content}</p>

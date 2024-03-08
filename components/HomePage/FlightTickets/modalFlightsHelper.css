@@ -1,0 +1,42 @@
+/* Modal container */
+.modala {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scrolling if needed */
+    background-color: rgba(0,0,0,0.8); /* Black with opacity */
+}
+
+/* Modal content */
+.modal-contenta {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px 40px; /* Increased padding */
+    height: 48vh;
+    border: 1px solid #888;
+    width: 75vw; /* Adjust width as needed */
+    border-radius: 10px; /* Round the edges */
+    border-radius: 10px; /* Round the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Close button */
+.closea {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closea:hover,
+.closea:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

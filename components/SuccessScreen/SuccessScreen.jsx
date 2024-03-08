@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./helperSuccess.css"; // Import CSS file for styles
 
-export default function SuccessScreen() {
+export default function SuccessScreen({ routing }) {
   const [drawTick, setDrawTick] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
 
@@ -50,7 +50,7 @@ export default function SuccessScreen() {
       </h1>
       {showMessage && (
         <a
-          href="/gg"
+          href={routing}
           className="text-blue-500 cursor-pointer"
           onClick={handleProceed}
         >
