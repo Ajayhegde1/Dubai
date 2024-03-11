@@ -119,9 +119,11 @@ export function PhoneVerification() {
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
               />
-              <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-500 ease-in-out transform hover:scale-105">
-                Register
-              </button>
+              <a href="/V1/PassPortInfoPage">
+                <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-500 ease-in-out transform hover:scale-105">
+                  Register
+                </button>
+              </a>
             </>
           )}
           <a

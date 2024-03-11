@@ -8,6 +8,7 @@ import vistaraImg from "@/public/vistara.jpeg";
 import Image from "next/image";
 import { homePageStyles } from "@/app/Styles/HomePageStyles";
 import lodgeImg from "@/public/accomodation.png";
+import Activity from "@/components/ItinenaryPahe/Activity/Activity";
 const AccommodationItem = ({ name, address, checkIn, checkOut }) => {
   const flightDetailsArrv = {
     airLine: "Vistara",
@@ -26,16 +27,11 @@ const AccommodationItem = ({ name, address, checkIn, checkOut }) => {
   };
 
   return (
-    <div className="mt-[10px] mb-[20px] w-[50%]">
-      <h1 className="text-[25px] font-[700]">Departing Flight :</h1>
+    <div className="mt-[10px] mb-[20px] w-[60%]">
       <div className="flex h-[25vh] justify-between mt-[10px] border-[1px] border-gray-300 rounded-xl p-[25px] items-center w-[80%] shadow-xl">
         <div className="flex flex-col justify-center ">
-          <p className=" items-center gap-[5px]">
-            <span
-              className={`${homePageStyles.flightsModalTextStyle} text-[20px]`}
-            >
-              {name}
-            </span>
+          <p className="flex flex-col items-center gap-[5px] justify-center">
+            <span className={`font-[600] text-[20px]`}>{name}</span>
             <span className={`${homePageStyles.flightsModalTextStyle}`}>
               <Image
                 className="rounded-[10px]"
@@ -120,15 +116,15 @@ const ItineraryPage = () => {
     // Logic for downloading ticket
   };
   return (
-    <section className="w-[100vw] h-[100vh]">
+    <section className="w-[100vw] h-[100vh] bg-[#F4F5F6]">
       <NavBar />
-      <div className="px-[10vw] mt-[40px] w-[90vw]">
+      <div className="px-[10vw] mt-[40px] w-[90vw] bg-[#F4F5F6]">
         <h2 className="text-[30px] font-[700] text-blue-900">Itinerary</h2>
         <div className="accommodations">
           <h3 className={`${itineraryStyles.subHeadText}`}>Accommodations</h3>
           <AccommodationItem
             name="Hotel ABC"
-            address="123 Main Street, City, Country"
+            address="123 Main Street,Downtown Dubai, Dubai"
             checkIn="2024-03-15"
             checkOut="2024-03-20"
           />
@@ -136,8 +132,8 @@ const ItineraryPage = () => {
         </div>
         <div className="flights">
           <h3 className={`${itineraryStyles.subHeadText}`}>Flights</h3>
-          <div className="flex">
-            <div className="mt-[30px] w-[50%]">
+          <div className="flex mb-[20px]">
+            <div className="mt-[10px] w-[50%]">
               <h1 className="text-[25px] font-[700]">Arrival Flight :</h1>
               <div className="flex h-[25vh] justify-between mt-[10px] border-[1px] border-gray-300 rounded-xl p-[25px] items-center w-[80%] shadow-xl">
                 <div className="flex flex-col justify-center ">
@@ -188,7 +184,7 @@ const ItineraryPage = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[40px] w-[50%]">
+            <div className="mt-[10px] w-[50%]">
               <h1 className="text-[25px] font-[700]">Departing Flight :</h1>
               <div className="flex h-[25vh] justify-between mt-[10px] border-[1px] border-gray-300 rounded-xl p-[25px] items-center w-[80%] shadow-xl">
                 <div className="flex flex-col justify-center ">
@@ -250,12 +246,13 @@ const ItineraryPage = () => {
         </div>
         <div className="activities">
           <h3 className={`${itineraryStyles.subHeadText}`}>Activities</h3>
-          <ActivityItem
+          <Activity />
+          {/* <ActivityItem
             name="Sightseeing Tour"
             date="2024-03-16"
             time="09:00 AM"
             location="City Center"
-          />
+          /> */}
           {/* More ActivityItems can be added here */}
         </div>
       </div>
