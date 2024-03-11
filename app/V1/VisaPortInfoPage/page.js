@@ -101,6 +101,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Full Name"
                         name="passportNumber"
                         value={passportData.passportNumber}
                         onChange={handleChange}
@@ -113,6 +114,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Your Nationality"
                         name="nationality"
                         value={passportData.nationality}
                         onChange={handleChange}
@@ -125,6 +127,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Passport Info"
                         name="expirationDate"
                         value={passportData.expirationDate}
                         onChange={handleChange}
@@ -137,6 +140,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="What is your purpose of visit"
                         name="issuingCountry"
                         value={passportData.issuingCountry}
                         onChange={handleChange}
@@ -149,6 +153,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Visa Number"
                         name="fullName"
                         value={passportData.fullName}
                         onChange={handleChange}
@@ -161,6 +166,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter DOB"
                         name="dateOfBirth"
                         value={passportData.dateOfBirth}
                         onChange={handleChange}
@@ -173,6 +179,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Gender"
                         name="gender"
                         value={passportData.gender}
                         onChange={handleChange}
@@ -185,6 +192,7 @@ export default function VisaPortInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Place of Birth"
                         name="placeOfBirth"
                         value={passportData.placeOfBirth}
                         onChange={handleChange}

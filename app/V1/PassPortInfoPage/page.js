@@ -100,6 +100,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Passport number"
                         name="passportNumber"
                         value={passportData.passportNumber}
                         onChange={handleChange}
@@ -112,6 +113,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter your Nationality"
                         name="nationality"
                         value={passportData.nationality}
                         onChange={handleChange}
@@ -124,6 +126,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Expiration Date"
                         name="expirationDate"
                         value={passportData.expirationDate}
                         onChange={handleChange}
@@ -136,6 +139,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Issuing Country's Name"
                         name="issuingCountry"
                         value={passportData.issuingCountry}
                         onChange={handleChange}
@@ -148,6 +152,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Your Full Name"
                         name="fullName"
                         value={passportData.fullName}
                         onChange={handleChange}
@@ -160,6 +165,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Your DOB"
                         name="dateOfBirth"
                         value={passportData.dateOfBirth}
                         onChange={handleChange}
@@ -172,6 +178,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Gender"
                         name="gender"
                         value={passportData.gender}
                         onChange={handleChange}
@@ -184,6 +191,7 @@ export default function PassportInfoPage() {
                       </label>
                       <input
                         type="text"
+                        placeholder="Enter Your Place of Birth"
                         name="placeOfBirth"
                         value={passportData.placeOfBirth}
                         onChange={handleChange}
