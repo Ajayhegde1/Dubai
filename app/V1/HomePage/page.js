@@ -1,4 +1,5 @@
 "use client";
+import FAQ from "@/components/HomePage/FAQ/FAQ";
 import "./helper.css";
 import { FeedSection } from "@/components/HomePage/FeedSection/FeedSection";
 import FlightTickets from "@/components/HomePage/FlightTickets/FlightTickets";
@@ -10,10 +11,12 @@ import { NavBar } from "@/components/NavBar/NavBar";
 import VisaApplicationForm from "@/components/VisaportInfoPage/VisaApplicationForm/VisaApplicationForm";
 import Head from "next/head";
 import { useState } from "react";
+import ContactSupport from "@/components/ContactSupport/ContactSupport";
 
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalOpenFlights, setModalOpenFlights] = useState(false);
+  const [modalOpenFAQ, setModalOpenFAQ] = useState(false);
   const [modalOpenVisa, setModalOpenVisa] = useState(false);
   const [status, setStatus] = useState("Processing");
   const [statusVisa, setStatusVisa] = useState("Document Verification");
@@ -27,6 +30,9 @@ export default function HomePage() {
   const openModalVisa = () => {
     setModalOpenVisa(true);
   };
+  const openModalFAQ = () => {
+    setModalOpenFAQ(true);
+  };
   const closeModalVisa = () => {
     setModalOpenVisa(false);
   };
@@ -36,12 +42,15 @@ export default function HomePage() {
   const closeModalFlights = () => {
     setModalOpenFlights(false);
   };
+  const closeModalFAQ = () => {
+    setModalOpenFAQ(false);
+  };
   return (
-    <>
+    <section className="overflow-hidden h-[100vh]">
       <NavBar />
-      <section className="w-[100vw] h-[100vh] flex ">
+      <section className="w-[100vw] h-[100vh] flex">
         <div className="w-[20vw] h-[100vh] bg-gray-100 text-blue-950 sticky">
-          <section className="flex justify-center items-center h-full">
+          <section className="flex justify-center items-center h-[88vh]">
             <section className="flex flex-col  rounded-lg bg-white border-2 border-gray-300 p-8 space-y-8  h-[98%] w-[95%]">
               <button onClick={openModalFlights} className="btn">
                 Flight Tickets
@@ -66,7 +75,10 @@ export default function HomePage() {
                 onClose={closeModalVisa}
                 status={statusVisa}
               />
-              <button className="btn">Q&A</button>
+              <button onClick={openModalFAQ} className="btn">
+                Q&A
+              </button>
+              <FAQ isOpen={modalOpenFAQ} onClose={closeModalFAQ} />
             </section>
           </section>
         </div>
@@ -82,7 +94,8 @@ export default function HomePage() {
         <div className="w-[23vw] h-[100vh] bg-[#F4F5F6]">
           <RightSideDiv />
         </div>
+        {/* <ContactSupport /> */}
       </section>
-    </>
+    </section>
   );
 }

@@ -52,7 +52,7 @@ export default function PassportInfoPage() {
     <>
       <NavBar />
       <section className="container mx-auto py-8">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className=" mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="bg-gray-100 px-6 py-4">
             <h1 className="text-xl font-bold text-gray-800">
               Passport Information

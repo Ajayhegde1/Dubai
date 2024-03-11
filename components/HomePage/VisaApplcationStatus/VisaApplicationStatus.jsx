@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./modalVisaHelper.css"; // Import your CSS file
 import passPortImg from "@/public/passport.png";
 import Image from "next/image";
+import rightImg from "@/public/arrow-right.png";
 const VisaApplicationStatus = ({
   isOpen,
   onClose,
@@ -26,14 +27,17 @@ const VisaApplicationStatus = ({
         </p>
         <div className="tracking-images">
           {/* Images representing different states of tracking */}
-          <div>
-            <Image
-              className={currentStage === "Applied" ? "active" : ""}
-              height={50}
-              width={50}
-              src={passPortImg}
-              alt="Applied"
-            />
+          <div className="mr-[-2vw]">
+            <div className="flex gap-[2vw]">
+              <Image
+                className={currentStage === "Applied" ? "active" : ""}
+                height={50}
+                width={50}
+                src={passPortImg}
+                alt="Applied"
+              />
+              <Image src={rightImg} />
+            </div>
             <p className="mt-[20px] text-[16px] font-[600]">Applied</p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>

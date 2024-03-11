@@ -1,0 +1,90 @@
+/* Modal container */
+.modala {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0,0,0,0.8); /* Black with opacity */
+}
+
+/* Modal content */
+.modal-contenta {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px 40px; /* Increased padding */
+    height: 48vh;
+    border: 1px solid #888;
+    width: 75vw; /* Adjust width as needed */
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    border-radius: 10px; /* Round the edges */
+    border-radius: 10px; /* Round the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.modal-contenta::-webkit-scrollbar {
+    width: 0; /* Set width to 0 to hide scrollbar */
+}
+/* Close button */
+.closea {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closea:hover,
+.closea:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+h2 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .toggle-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-answer {
+    margin-left: 20px;
+    display: none;
+    font-size: 16px;
+  }
+
+  .faq-answer p {
+    margin-bottom: 10px;
+  }
+
+  .faq-section.active .toggle-icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .faq-section.active .faq-answer {
+    display: block;
+  }

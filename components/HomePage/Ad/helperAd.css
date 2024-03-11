@@ -1,0 +1,85 @@
+.facebook-ad {
+    
+    
+    width:50vw;
+    margin-bottom: 20px;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .facebook-ad:hover {
+    background-color: #000000b2;
+   
+  }
+  
+  .ad-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .ad-content {
+    display: flex;
+    padding: 10px;
+    height: 20vh;
+    align-items: center;
+  }
+  
+  .ad-label {
+    background-color: #1877f2;
+    color: white;
+    height: 20%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .ad-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+  }
+  
+  .facebook-ad:hover .ad-image {
+    display: block; /* Display on hover */
+  }
+  
+  .ad-text {
+    text-align: center;
+  }
+  
+  .ad-link-text {
+    font-size: 24px; /* Larger text size */
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+  }
+  
+  .facebook-ad:hover .ad-link-text {
+    display: block; /* Display on hover */
+    /* margin-top: -8vh; */
+    
+  }
+  
+  .facebook-ad:hover .ad-content {
+    display: inline-flex; /* Change to inline-flex on hover */
+    align-items: center; /* Align items vertically */
+    justify-content: space-evenly;
+  }
+  
+  .facebook-ad:hover .ad-title {
+    display: none; /* Change to inline-flex on hover */
+    align-items: center; /* Align items vertically */
+    gap:1vw;
+  }
+  
+  .facebook-ad:hover .ad-description {
+    display: none; /* Change to inline-flex on hover */
+    align-items: center; /* Align items vertically */
+    gap:1vw;
+  }

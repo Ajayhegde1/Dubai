@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./modalPassportHelper.css"; // Import your CSS file
 import passPortImg from "@/public/passport.png";
 import Image from "next/image";
+import rightImg from "@/public/arrow-right.png";
 const PassportApplicationStatus = ({
   isOpen,
   onClose,
@@ -27,39 +28,50 @@ const PassportApplicationStatus = ({
         <div className="tracking-images">
           {/* Images representing different states of tracking */}
           <div>
-            <Image
-              className={currentStage === "Applied" ? "active" : ""}
-              height={50}
-              width={50}
-              src={passPortImg}
-              alt="Applied"
-            />
+            <div className="flex gap-[2vw]">
+              <Image
+                className={currentStage === "Applied" ? "active" : ""}
+                height={50}
+                width={50}
+                src={passPortImg}
+                alt="Applied"
+              />{" "}
+              <Image src={rightImg} />
+            </div>
             <p className="mt-[20px] text-[16px] font-[600]">Applied</p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
           <div>
-            <Image
-              height={50}
-              width={50}
-              src={passPortImg}
-              className={
-                currentStage === "Document Verification" ? "active" : ""
-              }
-              alt="Document Verification"
-            />
+            <div className="flex gap-[3vw]">
+              <Image
+                height={50}
+                width={50}
+                src={passPortImg}
+                className={
+                  currentStage === "Document Verification" ? "active" : ""
+                }
+                alt="Document Verification"
+              />
+              <Image src={rightImg} />
+            </div>
             <p className="mt-[20px] text-[16px] font-[600]">
               Document Verification
             </p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
           <div>
-            <Image
-              height={50}
-              width={50}
-              src={passPortImg}
-              className={currentStage === "Police Verification" ? "active" : ""}
-              alt="Police Verification"
-            />
+            <div className="flex gap-[3vw]">
+              <Image
+                height={50}
+                width={50}
+                src={passPortImg}
+                className={
+                  currentStage === "Police Verification" ? "active" : ""
+                }
+                alt="Police Verification"
+              />{" "}
+              <Image src={rightImg} />
+            </div>
             <p className="mt-[20px] text-[16px] font-[600]">
               Police Verification
             </p>

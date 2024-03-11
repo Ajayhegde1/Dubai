@@ -33,7 +33,7 @@ export function RightSideDiv() {
   });
 
   return (
-    <section className="flex justify-center items-center h-full">
+    <section className="flex justify-center items-center h-[88vh]">
       <section className="flex rounded-[20px] bg-white flex-col items-center h-[98%] w-[85%] border-[2px] py-[3vh] px-[1vw] gap-11 ">
         <div className="countdown-timer border-[#4A90E2] shadow-[#4A90E2] shadow-xl border-[15px] rounded-full h-[30vh] w-[30vh] flex flex-col justify-center">
           <div className="countdown-days flex justify-center">

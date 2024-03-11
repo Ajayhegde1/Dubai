@@ -4,6 +4,7 @@ import PassportApplicationForm from "@/components/VisaportInfoPage/VisaApplicati
 import SuccessScreen from "@/components/SuccessScreen/SuccessScreen";
 import { useState } from "react";
 import { NavBar } from "@/components/NavBar/NavBar";
+import VisaApplicationForm from "@/components/VisaportInfoPage/VisaApplicationForm/VisaApplicationForm";
 
 export default function VisaPortInfoPage() {
   const [hasPassport, setHasPassport] = useState(null);
@@ -52,17 +53,17 @@ export default function VisaPortInfoPage() {
     <>
       <NavBar />
       <section className="container mx-auto py-8">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className=" mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="bg-gray-100 px-6 py-4">
             <h1 className="text-xl font-bold text-gray-800">
-              Passport Information
+              Visa Information
             </h1>
           </div>
           <div className="p-6">
             {step === 1 && (
               <div className="mb-4">
                 <label className="block text-gray-700 font-bold mb-2">
-                  Do you have a passport?
+                  Do you have a Visa?
                 </label>
                 <div>
                   <label className="inline-flex items-center mr-4">
@@ -96,7 +97,7 @@ export default function VisaPortInfoPage() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
-                        Passport Number:
+                        Full Name:
                       </label>
                       <input
                         type="text"
@@ -120,7 +121,7 @@ export default function VisaPortInfoPage() {
                     </div>
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
-                        Expiration Date:
+                        Passport Information:
                       </label>
                       <input
                         type="text"
@@ -132,7 +133,7 @@ export default function VisaPortInfoPage() {
                     </div>
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
-                        Issuing Country:
+                        Purpose of Visit:
                       </label>
                       <input
                         type="text"
@@ -144,7 +145,7 @@ export default function VisaPortInfoPage() {
                     </div>
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
-                        Full Name:
+                        Visa Number:
                       </label>
                       <input
                         type="text"
@@ -192,7 +193,7 @@ export default function VisaPortInfoPage() {
                     </div>
                   </div>
                 ) : (
-                  <PassportApplicationForm />
+                  <VisaApplicationForm />
                 )}
               </div>
             )}
