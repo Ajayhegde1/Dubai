@@ -1,0 +1,35 @@
+.itinerary-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .itinerary-section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .itinerary-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .accommodation-item,
+  .flight-item,
+  .activity-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .accommodation-item h3,
+  .flight-item h3,
+  .activity-item h3 {
+    margin-top: 0;
+  }
+  
+  /* Add more specific styling as needed */
+  
