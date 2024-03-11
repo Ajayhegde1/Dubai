@@ -35,6 +35,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Full Name"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -75,6 +76,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Contact Number"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -107,6 +109,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Place of Birth"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -123,6 +126,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Your Nationality"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -140,6 +144,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Address"
               id="proofOfAddress"
               name="proofOfAddress"
               value={formData.proofOfAddress}
@@ -183,6 +188,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Occupation"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -207,6 +213,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Passport Number"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -235,6 +242,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Issuing Country"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -252,6 +260,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Address"
               id="proofOfAddress"
               name="proofOfAddress"
               value={formData.proofOfAddress}
@@ -275,6 +284,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Purpose of Visit"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}
@@ -288,6 +298,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Duration of Stay"
               name="expirationDate"
               // value={passportData.expirationDate}
               onChange={handleChange}
@@ -300,6 +311,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="date"
+              placeholder="Enter Purposed Date of Entry"
               name="expirationDate"
               // value={passportData.expirationDate}
               onChange={handleChange}
@@ -312,6 +324,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="date"
+              placeholder="Enter Proposed Date of Exit"
               name="expirationDate"
               // value={passportData.expirationDate}
               onChange={handleChange}
@@ -328,6 +341,7 @@ export default function VisaApplicationForm() {
             </label>
             <input
               type="text"
+              placeholder="Enter Details of Accomodation"
               id="proofOfIdentity"
               name="proofOfIdentity"
               value={formData.proofOfIdentity}

@@ -33,6 +33,7 @@ export default function PassportApplicationForm() {
         </label>
         <input
           type="text"
+          placeholder="Enter Proof of Identity"
           id="proofOfIdentity"
           name="proofOfIdentity"
           value={formData.proofOfIdentity}
@@ -49,6 +50,7 @@ export default function PassportApplicationForm() {
         </label>
         <input
           type="text"
+          placeholder="Enter Proof of Address"
           id="proofOfAddress"
           name="proofOfAddress"
           value={formData.proofOfAddress}
@@ -65,6 +67,7 @@ export default function PassportApplicationForm() {
         </label>
         <input
           type="date"
+          placeholder="Enter DOB"
           id="dateOfBirth"
           name="dateOfBirth"
           value={formData.dateOfBirth}
@@ -111,6 +114,7 @@ export default function PassportApplicationForm() {
         </label>
         <input
           type="text"
+          placeholder="Enter Fee Payment"
           id="feePayment"
           name="feePayment"
           value={formData.feePayment}
