@@ -4,7 +4,7 @@ import CreditCardDetails from "../CreditCardDetails/CreditCardDetails";
 import NetBankingDetails from "../NetBankingDetails/NetBankingDetails";
 import qrImg from "@/public/qr.png";
 import Image from "next/image";
-import monImg from "@/public/monIcon.png";
+import monImg from "@/public/mon.png";
 import Link from "next/link";
 
 const VerticalTabs = () => {
@@ -32,7 +32,7 @@ const VerticalTabs = () => {
             <h1 className="text-[40px] text-center font-[700] mt-[-15vh]">
               Payment <br></br> Details
             </h1>
-            {/* <Image src={monImg} height={200} /> */}
+            <Image src={monImg} height={200} />
           </div>
           <div className="h-full flex items-center">
             <div className="bg-gray-300 h-[80%] w-[2px] ml-[-1vw]"></div>
