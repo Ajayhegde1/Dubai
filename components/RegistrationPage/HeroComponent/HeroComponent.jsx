@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export function HeroComponent() {
@@ -13,7 +14,9 @@ export function HeroComponent() {
     <section className="container mx-auto py-8">
       <div className=" mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="bg-gray-100 px-6 py-4">
-          <h1 className="text-xl font-bold text-gray-800">User Details</h1>
+          <h1 className="text-xl font-bold text-gray-800">
+            Registration - User Details
+          </h1>
         </div>
         <div className="p-6">
           <div className="mb-4">
@@ -303,7 +306,7 @@ export function HeroComponent() {
                       className="block w-full h-full px-4 py-2 border rounded-md mb-2 focus:outline-none focus:border-blue-500"
                     />
                   </div>
-                  <div className="mb-4">
+                  <div className="mb-4 border py-[2vh] px-[1vw] rounded-md h-full">
                     <label
                       htmlFor="budget"
                       className="block text-gray-700 font-bold mb-2"
@@ -334,6 +337,11 @@ export function HeroComponent() {
               </div>
             </div>
           </div>
+          <Link href="/V1/PassPortInfoPage">
+            <button className="bg-[#14A800] px-[1vw] py-[1vh] rounded-full text-white font-[700]">
+              Continue
+            </button>
+          </Link>
         </div>
       </div>
     </section>

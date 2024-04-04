@@ -39,6 +39,9 @@ const CreditCardDetails = () => {
       <div>
         {/* <h3>Debit Card Details</h3> */}
         <div className="mb-4 relative flex flex-col space-y-4 ">
+          <label className="text-[18px] font-[600] text-gray-500">
+            Card Number:
+          </label>
           <div className="flex gap-[10px]">
             <input
               type="text"
@@ -70,33 +73,41 @@ const CreditCardDetails = () => {
             </div>
           </div>
           <div>
+            <label className="text-[18px] font-[600] text-gray-500">
+              Name on Card :
+            </label>
             <input
               type="text"
               id="cardNumber"
               //   value={cardName}
-              className="border border-gray-400 rounded py-2 px-4 block w-full pr-12"
+              className="border border-gray-400 rounded py-2 px-4 block w-full pr-12 mt-3"
               placeholder="Name on Card"
             />
           </div>
-
           <div className="flex justify-between">
             <div className="mb-4">
+              <label className="text-[18px] font-[600] text-gray-500">
+                Expiry :
+              </label>
               <input
                 type="text"
                 id="expiry"
                 value={expiry}
                 onChange={handleExpiryChange}
-                className="border border-gray-400 rounded py-2 px-4 block w-[80%]"
-                placeholder="Valid Thru (MM/YY)"
+                className="border border-gray-400 rounded py-2 px-4 block w-[80%] mt-3"
+                placeholder="MM/YY"
               />
             </div>
             <div className="w-[30%]">
+              <label className="text-[18px] font-[600] text-gray-500">
+                CVV :
+              </label>
               <input
                 type="text"
                 id="cvv"
                 value={cvv}
                 onChange={handleCvvChange}
-                className="border border-gray-400 rounded py-2 px-4 block w-full"
+                className="border border-gray-400 rounded py-2 px-4 block w-full mt-3"
                 placeholder="CVV"
               />
             </div>

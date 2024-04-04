@@ -5,7 +5,7 @@ export default function SuccessScreenFlightsPage() {
   return (
     <section>
       <NavBar />
-      <SuccessScreenFlightsComponent />
+      <SuccessScreenFlightsComponent routing={"/V1/PaymentGatewayPage"} />
     </section>
   );
 }

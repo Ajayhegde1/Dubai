@@ -121,7 +121,7 @@ export default function FlightBookingPage() {
                   Date of Birth:
                 </label>
                 <input
-                  type="text"
+                  type="date"
                   placeholder="Enter Your DOB"
                   name="dateOfBirth"
                   value={formData.dateOfBirth}
@@ -169,7 +169,7 @@ export default function FlightBookingPage() {
           </div>
 
           <div className=" gap-4 p-8">
-            <div className="flex w-full justify-between items-center">
+            <div className="grid grid-cols-3 w-full gap-4 ">
               <div className="mb-4">
                 <label
                   htmlFor="preferredAirline"
@@ -180,7 +180,7 @@ export default function FlightBookingPage() {
                 <select
                   name="preferredAirline"
                   id="preferredAirline"
-                  className="mt-[1vh] p-2 w-[24.9vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-[1vh] p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   onChange={handleChange}
                 >
                   <option value="">Select Cabin</option>
@@ -201,7 +201,7 @@ export default function FlightBookingPage() {
                   name="placeOfDeparture"
                   value={formData.placeOfDeparture}
                   onChange={handleChange}
-                  className="block w-[24.9vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
               <div className="mb-4 ">
@@ -214,11 +214,11 @@ export default function FlightBookingPage() {
                   name="destinantion"
                   value={formData.destination}
                   onChange={handleChange}
-                  className="block w-[24.9vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="grid grid-cols-3 w-full gap-4 ">
               <div className="mb-4">
                 <label
                   htmlFor="preferredAirline"
@@ -229,7 +229,7 @@ export default function FlightBookingPage() {
                 <select
                   name="preferredAirline"
                   id="preferredAirline"
-                  className="mt-1 p-2 w-[24.9vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   onChange={handleChange}
                 >
                   <option value="">Select Airline</option>
@@ -245,7 +245,7 @@ export default function FlightBookingPage() {
                 </label>
                 <input
                   type="datetime-local"
-                  className="mt-1 p-2 w-[24.9vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   onChange={(date) => handleDateChange("ETD", date)}
                 />
               </div>
@@ -256,12 +256,12 @@ export default function FlightBookingPage() {
                 <input
                   type="datetime-local"
                   onChange={(date) => handleDateChange("ETA", date)}
-                  className="mt-1 p-2 w-[24.9vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                 />
               </div>
             </div>
-            <div className="flex justify-between ">
-              <div className="flex gap-[0.8vw] mt-[1px]">
+            <div className="grid grid-cols-3 w-full gap-4 ">
+              <div className="grid grid-cols-2 w-full gap-4 ">
                 <div className="mb-4">
                   <label
                     htmlFor="seat"
@@ -272,7 +272,7 @@ export default function FlightBookingPage() {
                   <select
                     name="seat"
                     id="seat"
-                    className="mt-1 p-2 w-[12.05vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 "
+                    className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 "
                     onChange={handleChange}
                   >
                     <option value="">Select Seat</option>
@@ -293,7 +293,7 @@ export default function FlightBookingPage() {
                   <select
                     name="meals"
                     id="meals"
-                    className="mt-1 p-2 w-[12.05vw] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                    className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                     onChange={handleChange}
                   >
                     <option value="">Select Meal</option>
@@ -314,19 +314,16 @@ export default function FlightBookingPage() {
                   name="medicalHistory"
                   value={formData.placeOfDeparture}
                   onChange={handleChange}
-                  className="mt-1 w-[24.9vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
               <div className="mb-4 w-[24.9vw]"></div>
             </div>
           </div>
-          <div className=" justify-center items-center  px-[650px]">
+          <div className=" justify-center items-center flex">
             <Link href="/V1/SuccessScreenFlightsPage">
-              <button
-                type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-[150px]"
-              >
-                Submit
+              <button className="bg-[#14A800] px-[1vw] py-[1vh] rounded-full text-white font-[700] ">
+                Continue
               </button>
             </Link>
           </div>

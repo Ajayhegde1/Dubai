@@ -243,7 +243,7 @@ export default function VisaPortInfoPage() {
               )}
               {step === 3 && (
                 <>
-                  <SuccessScreen routing="/V1/HomePage" />
+                  <SuccessScreen routing="/V1/FlightBookingPage" />
                 </>
               )}
               {step === 5 && (

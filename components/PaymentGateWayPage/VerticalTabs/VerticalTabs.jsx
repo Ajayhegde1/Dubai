@@ -5,11 +5,13 @@ import NetBankingDetails from "../NetBankingDetails/NetBankingDetails";
 import qrImg from "@/public/qr.png";
 import Image from "next/image";
 import monImg from "@/public/monIcon.png";
+import Link from "next/link";
 
 const VerticalTabs = () => {
   const [activeTab, setActiveTab] = useState("debit-card");
   const [upiId, setUpiId] = useState("");
   const [showQr, setShowQr] = useState(false);
+  const [selectedBank, setSelectedBank] = useState();
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -25,12 +27,15 @@ const VerticalTabs = () => {
   return (
     <section className="w-[100vw] flex justify-center">
       <div className="flex justify-between w-[80vw] gap-[5vw]">
-        <div className="flex w-[60vw] h-[80vh] p-6 shadow-xl">
-          <div className="w-[40%] flex flex-col items-center justify-center">
-            <h1 className="text-[60px] text-center font-[700] mt-[-15vh]">
-              Payment Details
+        <div className="flex w-[60vw] h-[80vh] p-6 shadow-xl justify-evenly">
+          <div className="w-[30%] flex flex-col items-center justify-center">
+            <h1 className="text-[40px] text-center font-[700] mt-[-15vh]">
+              Payment <br></br> Details
             </h1>
-            <Image src={monImg} height={250} />
+            <Image src={monImg} height={200} />
+          </div>
+          <div className="h-full flex items-center">
+            <div className="bg-gray-300 h-[80%] w-[2px] ml-[-1vw]"></div>
           </div>
           <div className="w-[60%]">
             <div className="flex pb-[4vh]">
@@ -101,7 +106,7 @@ const VerticalTabs = () => {
                   <div className="flex items-center gap-[0.5vw]">
                     <input
                       type="text"
-                      placeholder="ram@okicicibank"
+                      placeholder="ram-1"
                       value={upiId}
                       onChange={handleUpiIdChange}
                       className="border border-gray-400 rounded py-2 px-4  w-[80%]"
@@ -110,10 +115,15 @@ const VerticalTabs = () => {
                     <select
                       type="text"
                       placeholder="ram@okicicibank"
-                      value={upiId}
-                      onChange={handleUpiIdChange}
+                      value={selectedBank}
+                      onChange={(e) => setSelectedBank(e.target.value)}
                       className="border border-gray-400 rounded py-2 px-4 w-[20%]"
-                    />
+                    >
+                      <option value="1">okicici</option>
+                      <option value="2">okhdfc</option>
+                      <option value="3">ybl</option>
+                      <option value="4">oksbi</option>
+                    </select>
                   </div>
                   <div className="my-[3vh]">
                     <button
@@ -147,9 +157,11 @@ const VerticalTabs = () => {
                 </div>
               )}
             </div>
-            <button className=" text-white text-[20px] font-[600] bg-[#32C770] rounded-[12px] py-[1vh] w-full">
-              Pay Rs. 80,000
-            </button>
+            <Link href="/V1/HomePage">
+              <button className=" text-white text-[20px] font-[600] bg-[#32C770] rounded-[12px] py-[1vh] w-full">
+                Pay Rs. 80,000
+              </button>
+            </Link>
           </div>
         </div>
 
