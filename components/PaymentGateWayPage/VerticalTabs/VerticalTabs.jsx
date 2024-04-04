@@ -32,7 +32,7 @@ const VerticalTabs = () => {
             <h1 className="text-[40px] text-center font-[700] mt-[-15vh]">
               Payment <br></br> Details
             </h1>
-            <Image src={monImg} height={200} />
+            {/* <Image src={monImg} height={200} /> */}
           </div>
           <div className="h-full flex items-center">
             <div className="bg-gray-300 h-[80%] w-[2px] ml-[-1vw]"></div>
