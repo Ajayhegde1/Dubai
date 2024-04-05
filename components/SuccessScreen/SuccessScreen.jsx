@@ -45,7 +45,7 @@ export default function SuccessScreen({ routing }) {
           d="M5 13l4 4L19 7"
         />
       </svg>
-      <h1 className="text-xl font-bold text-gray-800 mb-2">
+      <h1 className="text-xl font-bold text-gray-800 mb-2 text-center">
         Details saved successfully!
       </h1>
       {showMessage && (

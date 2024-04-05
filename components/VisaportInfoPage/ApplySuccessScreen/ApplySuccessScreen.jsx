@@ -45,10 +45,12 @@ export default function SuccessScreen() {
           d="M5 13l4 4L19 7"
         />
       </svg>
-      <h1 className="text-xl font-bold text-gray-800 mb-2">
+      <h1 className="text-xl font-bold text-gray-800 mb-2 text-center">
         Details collected successfully!
       </h1>
-      <p className="text-gray-600">Kindly wait for our team to revert back.</p>
+      <p className="text-gray-600 text-center">
+        Kindly wait for our team to revert back.
+      </p>
       {showMessage && (
         <a
           href="/V1/FlightBookingPage"

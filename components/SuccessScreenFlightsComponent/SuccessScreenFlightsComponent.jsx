@@ -54,7 +54,7 @@ export default function SuccessScreenFlightsComponent({ routing }) {
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            <h1 className="text-xl font-bold text-gray-800 mb-2">
+            <h1 className="text-xl font-bold text-gray-800 mb-2 text-center">
               Flight Details Captured successfully!
             </h1>
             <p className="text-gray-600">
