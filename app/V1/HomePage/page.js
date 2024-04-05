@@ -147,7 +147,7 @@ export default function HomePage() {
           </section>
         </div>
 
-        <div className=" feed-sec lg:w-[57vw] md:w-[57vw] xl:w-[57vw] 2xl:w-[57vw] w-full h-[100vh] overflow-y-auto  bg-[#F4F5F6] scrollbar-hidden py-[1vh]">
+        <div className=" feed-sec lg:w-[57vw] md:w-[57vw] xl:w-[57vw] 2xl:w-[57vw] w-full  overflow-y-auto  bg-[#F4F5F6] scrollbar-hidden py-[1vh]">
           <section className="flex justify-center items-center h-auto">
             <section className="flex rounded-[20px] bg-white flex-col items-center h-auto w-[95%] border-[2px] py-[3vh]  gap-11 ">
               <InfoCard />
