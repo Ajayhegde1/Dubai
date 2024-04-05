@@ -46,10 +46,10 @@ export function FeedSection() {
     // Add more sample data as needed
   ];
   return (
-    <section className="w-full bg-[#F4F5F6]] py-6">
+    <section className="w-full py-6">
       <div className="w-full flex flex-col mx-auto justify-center align-middle  ">
         <div className="w-full">
-          <h1 className="text-3xl font-bold text-center mb-6 w-full text-blue-900">
+          <h1 className="text-3xl font-bold lg:text-center md:text-center xl:text-center 2xl:text-center mb-6 w-full text-blue-900 text-center">
             What's Happening in Dubai?
           </h1>
         </div>
@@ -57,7 +57,7 @@ export function FeedSection() {
           {feedItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden w-[50vw] "
+              className="bg-white rounded-lg shadow-md overflow-hidden lg:w-[50vw] md:w-[50vw] xl:w-[50vw] 2xl:w-[50vw] w-full"
             >
               <div className="p-4">
                 <div className="flex items-center space-x-4">
@@ -103,7 +103,7 @@ export function FeedSection() {
           {feedItems2.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden w-[50vw] "
+              className="bg-white rounded-lg shadow-md overflow-hidden lg:w-[50vw] md:w-[50vw] xl:w-[50vw] 2xl:w-[50vw] w-full"
             >
               <div className="p-4">
                 <div className="flex items-center space-x-4">

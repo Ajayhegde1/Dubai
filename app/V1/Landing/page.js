@@ -44,14 +44,16 @@ export default function Landing() {
   }, []);
 
   return (
-    <section className="a h-[100vh] w-[100vw] flex px-[4vw]">
-      <div className="flex items-center justify-center w-[40vw] h-[100vh] ">
-        <Image width="100vw" src={logoImg} />
+    <section className="a h-[100vh] w-[100vw]  md:flex lg:flex xl:flex 2xl:flex  px-[2vw] xl:px-[4vw] lg:px-[4vw] md:px-[10vw] ">
+      <div className="sm:flex md:flex lg:flex xl:flex 2xl:flex flex mt-[5vh] md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-center justify-center w-[100vw] md:w-[40vw] lg:w-[40vw] sm:w-[40vw] xl:w-[40vw] 2xl:w-[40vw] ">
+        <Image
+          className="lg:w-[100vw] md:w-[100vw] xl:w-[100vw] 2xl:w-[100vw] w-[20vw]"
+          src={logoImg}
+        />
       </div>
-      <div className="flex items-center flex-col space-y-20  w-[60vw]">
-        <div className="absolute inset-0 w-full h-full"></div>
+      <div className="flex items-center flex-col space-y-20 w-full lg:w-[60vw] md:w-[60w] xl:w-[60w] 2xl:w-[60vw] justify-center">
         <div className="relative z-10 text-center">
-          <h1 className="ab font-bold text-8xl text-[#16468F]">
+          <h1 className="ab font-bold lg:text-8xl md:text-8xl xl:text-8xl 2xl:text-8xl text-6xl text-[#16468F]">
             <span
               className="h opacity-0"
               ref={(el) => (lettersRef.current[0] = el)}
@@ -205,10 +207,10 @@ export default function Landing() {
           </h1>
         </div>
         <div className="main-div relative z-10 text-center">
-          <p className="font-bold text-[80px] text-[#E3AE23]">
+          <p className="text-[#E3AE23] font-bold lg:text-8xl md:text-8xl xl:text-8xl 2xl:text-8xl text-6xl">
             Conference 2024
           </p>
-          <p className="font-bold text-6xl text- text-[#16468F]">
+          <p className="font-bold lg:text-6xl md:text-6xl xl:text-6xl 2xl:text-6xl  text-4xl text- text-[#16468F]">
             Let's Go Dubai
           </p>
 

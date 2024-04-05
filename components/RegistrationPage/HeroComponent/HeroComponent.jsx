@@ -29,14 +29,14 @@ export function HeroComponent() {
                   Full Name
                 </label>
               </div>
-              <div className="flex justify-between">
+              <div className="grid lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-1 gap-[1vw]">
                 <div className="mb-4">
                   <input
                     type="text"
                     placeholder="First Name"
                     id="firstName"
                     name="firstName"
-                    className="block w-[25vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="mb-4">
@@ -45,7 +45,7 @@ export function HeroComponent() {
                     placeholder="Middle Name"
                     id="middleName"
                     name="middleName"
-                    className="block  w-[25vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="mb-4">
@@ -54,11 +54,11 @@ export function HeroComponent() {
                     placeholder="Last Name"
                     id="lastName"
                     name="lastName"
-                    className="block  w-[25vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
-              <div className="flex w-full gap-[1.5vw]">
+              <div className="grid lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-1 gap-[1vw]">
                 <div className="mb-4 w-full">
                   <label
                     className="block text-gray-700 font-bold mb-2"
@@ -107,7 +107,7 @@ export function HeroComponent() {
                   />
                 </div>
               </div>
-              <div className="flex justify-between gap-[1.5vw]">
+              <div className="grid lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-1 gap-[1vw]">
                 <div className="mb-4 w-full">
                   <label
                     className="block text-gray-700 font-bold mb-2"
@@ -218,14 +218,14 @@ export function HeroComponent() {
                   Rotary Details
                 </label>
               </div>
-              <div className="flex justify-between">
+              <div className="grid lg:grid-cols-4 md:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-[1vw]">
                 <div className="mb-4">
                   <input
                     type="text"
                     placeholder="Rotary ID"
                     id="firstName"
                     name="firstName"
-                    className="block w-[18.5vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="mb-4">
@@ -234,7 +234,7 @@ export function HeroComponent() {
                     placeholder="Rotary Club Name"
                     id="middleName"
                     name="middleName"
-                    className="block w-[18.5vw] px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="mb-4">
@@ -243,14 +243,14 @@ export function HeroComponent() {
                     placeholder="Rotary District Name"
                     id="lastName"
                     name="lastName"
-                    className="block w-[18.5vw]   px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full   px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="mb-4">
                   <select
                     id="role"
                     name="role"
-                    className="block w-[18.5vw]   px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    className="block w-full   px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   >
                     <option value="" disabled selected>
                       Select Role
@@ -270,7 +270,7 @@ export function HeroComponent() {
                   Accommodation Requirements:
                 </label>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid gap-4 lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 gap-[1vw]">
                   <div className="mb-4">
                     <select
                       id="role"
@@ -338,7 +338,7 @@ export function HeroComponent() {
             </div>
           </div>
           <Link href="/V1/PassPortInfoPage">
-            <button className="bg-[#14A800] px-[1vw] py-[1vh] rounded-full text-white font-[700]">
+            <button className="bg-[#14A800] lg:px-[1vw] md:px-[1vw] xl:px-[1vw] 2xl:px-[1vw] px-[4vw]  py-[1vh] rounded-full text-white font-[700] mt-[2vh] lg:mt-[1vh] md:mt-[1vh] xl:mt-[1vh] 2xl:mt-[1vh]">
               Continue
             </button>
           </Link>

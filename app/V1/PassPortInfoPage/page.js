@@ -93,7 +93,7 @@ export default function PassportInfoPage() {
             {step === 2 && (
               <div>
                 {hasPassport ? (
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1  gap-4">
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
                         Passport Number:

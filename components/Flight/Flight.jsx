@@ -50,7 +50,7 @@ export default function FlightBookingPage() {
             <h1 className="text-xl font-bold text-gray-800">Personal Info</h1>
           </div>
           <div className="px-8">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-full gap-4 ">
               <div className="mb-4">
                 <label className="block text-gray-700 font-bold mb-2 pl-2 mt-2">
                   First Name:
@@ -169,7 +169,7 @@ export default function FlightBookingPage() {
           </div>
 
           <div className=" gap-4 p-8">
-            <div className="grid grid-cols-3 w-full gap-4 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-full gap-4 ">
               <div className="mb-4">
                 <label
                   htmlFor="preferredAirline"
@@ -218,7 +218,7 @@ export default function FlightBookingPage() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-3 w-full gap-4 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-full gap-4  ">
               <div className="mb-4">
                 <label
                   htmlFor="preferredAirline"
@@ -260,7 +260,7 @@ export default function FlightBookingPage() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-3 w-full gap-4 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-full gap-4 ">
               <div className="grid grid-cols-2 w-full gap-4 ">
                 <div className="mb-4">
                   <label
@@ -320,9 +320,9 @@ export default function FlightBookingPage() {
               <div className="mb-4 w-[24.9vw]"></div>
             </div>
           </div>
-          <div className=" justify-center items-center flex">
+          <div className="lg:px-[1.8vw] md:px-[1.8vw] xl:px-[1.8vw] 2xl:px-[1.8vw] px-[7vw] mt-[-5vh] lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0">
             <Link href="/V1/SuccessScreenFlightsPage">
-              <button className="bg-[#14A800] px-[1vw] py-[1vh] rounded-full text-white font-[700] ">
+              <button className="bg-[#14A800] lg:px-[1vw] md:px-[1vw] xl:px-[1vw] 2xl:px-[1vw] px-[4vw]  py-[1vh] rounded-full text-white font-[700]">
                 Continue
               </button>
             </Link>

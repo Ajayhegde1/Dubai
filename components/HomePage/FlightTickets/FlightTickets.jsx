@@ -47,10 +47,14 @@ const FlightTickets = ({
           &times;
         </span>
 
-        <h2 className="text-[35px] font-[800]">Flight Details</h2>
+        <h2 className=" lg:text-[35px] md:text-[35px] xl:text-[35px] 2xl:text-[35px] text-[28px] font-[800]">
+          Flight Details
+        </h2>
         <div className="mt-[30px]">
-          <h1 className="text-[25px] font-[700]">Arrival Flight :</h1>
-          <div className="flex justify-between mt-[10px]">
+          <h1 className="  lg:text-[25px] md:text-[25px] xl:text-[25px] 2xl:text-[25px] text-[20px]  font-[700]">
+            Arrival Flight :
+          </h1>
+          <div className="lg:flex md:flex xl:flex 2xl:flex  justify-between mt-[10px]">
             <div className="flex flex-col justify-center ">
               <p className="flex items-center gap-[5px]">
                 <span
@@ -68,8 +72,8 @@ const FlightTickets = ({
                 </span>
               </p>
             </div>
-            <div className="h-[60px] w-[2px] bg-black"></div>
-            <div className="flex justify-center gap-[25px] items-center">
+            <div className="h-[60px] w-[2px] bg-black hidden md:flex xl:flex 2xl:flex lg:flex"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3  xl:grid-cols-3  2xl:grid-cols-3  gap-[25px] items-center ">
               <p>
                 <span className={`${homePageStyles.flightsModalStyle}`}>
                   Departure Time:{" "}
@@ -97,7 +101,7 @@ const FlightTickets = ({
                 </span>
               </p>
             </div>
-            <div className="h-[60px] w-[2px] bg-black"></div>
+            <div className="h-[60px] w-[2px] bg-black hidden md:flex xl:flex 2xl:flex lg:flex"></div>
 
             <div className="flex gap-[15vw] items-center ">
               {" "}
@@ -109,8 +113,10 @@ const FlightTickets = ({
         </div>
 
         <div className="mt-[40px]">
-          <h1 className="text-[25px] font-[700]">Departing Flight :</h1>
-          <div className="flex justify-between mt-[10px]">
+          <h1 className="  lg:text-[25px] md:text-[25px] xl:text-[25px] 2xl:text-[25px] text-[20px]  font-[700]">
+            Departing Flight :
+          </h1>
+          <div className="lg:flex md:flex xl:flex 2xl:flex  justify-between mt-[10px]">
             <div className="flex flex-col justify-center ">
               <p className="flex items-center gap-[5px]">
                 <span
@@ -128,8 +134,8 @@ const FlightTickets = ({
                 </span>
               </p>
             </div>
-            <div className="h-[60px] w-[2px] bg-black"></div>
-            <div className="flex justify-center gap-[25px] items-center">
+            <div className="h-[60px] w-[2px] bg-black hidden md:flex xl:flex 2xl:flex lg:flex"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3  xl:grid-cols-3  2xl:grid-cols-3  gap-[25px] items-center ">
               <p>
                 <span className={`${homePageStyles.flightsModalStyle}`}>
                   Departure Time:{" "}
@@ -157,7 +163,7 @@ const FlightTickets = ({
                 </span>
               </p>
             </div>
-            <div className="h-[60px] w-[2px] bg-black"></div>
+            <div className="h-[60px] w-[2px] bg-black hidden md:flex xl:flex 2xl:flex lg:flex"></div>
             <div className="flex gap-[15vw] items-center ">
               <button className="btn w-auto h-[6vh]" onClick={downloadTicket}>
                 Download Flight Ticket

@@ -20,8 +20,10 @@ const VisaApplicationStatus = ({
         <span className="close" onClick={onClose}>
           &times;
         </span>
-        <h2 className="text-[30px] font-[700]">Visa Application Status</h2>
-        <p className="text-[20px] mb-[40px]">
+        <h2 className=" lg:text-[35px] md:text-[35px] xl:text-[35px] 2xl:text-[35px] text-[20px] font-[800]">
+          Visa Application Status
+        </h2>
+        <p className="text-[16px] lg:text-[20px] md:text-[20px] xl:text-[20px] 2xl:text-[20px]  mb-[40px]">
           <span className="font-[500]">Current Status:</span>{" "}
           <span>{status}</span>
         </p>
@@ -56,7 +58,7 @@ const VisaApplicationStatus = ({
             </p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
-          <div>
+          <div className="hidden lg:relative md:relative xl:relative 2xl:relative">
             <Image
               height={50}
               width={50}
@@ -69,7 +71,7 @@ const VisaApplicationStatus = ({
             </p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
-          <div>
+          <div className="hidden lg:relative md:relative xl:relative 2xl:relative">
             <Image
               height={50}
               width={50}
@@ -80,7 +82,7 @@ const VisaApplicationStatus = ({
             <p className="mt-[20px] text-[16px] font-[600]">Processing</p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
-          <div>
+          <div className="hidden lg:relative md:relative xl:relative 2xl:relative">
             <Image
               height={50}
               width={50}
@@ -91,7 +93,7 @@ const VisaApplicationStatus = ({
             <p className="mt-[20px] text-[16px] font-[600]">Printing</p>
             {currentStage !== "Applied" && <div className="arrow-right"></div>}
           </div>
-          <div>
+          <div className="hidden lg:relative md:relative xl:relative 2xl:relative">
             <Image
               height={50}
               width={50}

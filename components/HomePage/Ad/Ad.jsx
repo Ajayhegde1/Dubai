@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Ad = ({ title, description, imageUrl, link }) => {
   return (
-    <div className="facebook-ad bg-white rounded-lg shadow-md  w-[50vw] ">
+    <div className="facebook-ad bg-white rounded-lg shadow-md lg:w-[50vw] md:w-[50vw] xl:w-[50vw] 2xl:w-[50vw] w-full ">
       <a
         href={link}
         target="_blank"

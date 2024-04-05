@@ -7,13 +7,13 @@ import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 export function InfoCard() {
   return (
-    <section className="w-full h-[20vh] flex justify-center bg-white">
-      <div className="ast w-[98%] h-full rounded-xl shadow-lg drop-shadow-xl">
+    <section className="w-full lg:h-[20vh] xl:h-[20vh] 2xl:h-[20vh] md:h-[20vh] h-[30vh] flex justify-center bg-white">
+      <div className="ast w-[100%] h-full rounded-xl shadow-lg drop-shadow-xl px-2">
         <div className="h-[20%] w-full border-gray-500">
           <h1 className="text-[30px] font-[800] px-[1vw]  text-blue-900 mt-[-10px]">
             Welcome Manoj
           </h1>
-          <div className="w-[90%] h-[2px] bg-black mb-[5px]"></div>
+          <div className="w-[100%] h-[2px] bg-black mb-[5px]"></div>
         </div>
         <div className="flex h-[80%] mt-[10px]">
           <div className="w-[70%] h-full  grid grid-cols-2 px-[1vw]">

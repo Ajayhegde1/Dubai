@@ -25,7 +25,7 @@ export default function VisaApplicationForm() {
         <div className="h-[5vh] bg-[#F3F4F6] flex items-center rounded-tr-[20px] rounded-tl-[20px] w-full px-[25px] pt-[5px]">
           <h2 className="text-lg font-semibold mb-2">Personal Information</h2>
         </div>
-        <div className="grid grid-cols-3 w-full mt-[2vh] px-[20px] space-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3  gap-4 w-full mt-[2vh] px-[20px] ">
           <div className="mb-4">
             <label
               className="block text-gray-700 font-bold mb-2"
@@ -203,7 +203,7 @@ export default function VisaApplicationForm() {
         <div className="h-[5vh] bg-[#F3F4F6] flex items-center rounded-tr-[20px] rounded-tl-[20px] w-full px-[25px] pt-[5px]">
           <h2 className="text-lg font-semibold mb-2">Passport Information</h2>
         </div>
-        <div className="grid grid-cols-3 w-full mt-[2vh] px-[20px] space-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4  w-full mt-[2vh] px-[20px]">
           <div className="mb-4">
             <label
               className="block text-gray-700 font-bold mb-2"
@@ -274,7 +274,7 @@ export default function VisaApplicationForm() {
         <div className="h-[5vh] bg-[#F3F4F6] flex items-center rounded-tr-[20px] rounded-tl-[20px] w-full px-[25px] pt-[5px]">
           <h2 className="text-lg font-semibold mb-2">Travel Information</h2>
         </div>
-        <div className="grid grid-cols-3 w-full mt-[2vh] px-[20px] space-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-full gap-4  mt-[2vh] px-[20px] ">
           <div className="mb-4">
             <label
               className="block text-gray-700 font-bold mb-2"

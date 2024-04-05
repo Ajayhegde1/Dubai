@@ -47,7 +47,7 @@ export function PhoneVerificationSignUp() {
 
   return (
     <section className="w-[100vw] flex justify-center mt-[15vh]">
-      <div className="border shadow-xl  h-auto w-[30vw] rounded-[12px] py-[2vh] px-[2vw]">
+      <div className="border shadow-xl  h-auto w-[90%] xl:w-[30vw] 2xl:w-[30vw] lg:w-[20vw] md:w-[30vw] rounded-[12px] py-[2vh] px-[6vw] lg:px-[2vw] md:px-[2vw] xl:px-[2vw] 2xl:px-[2vw]">
         <div className="flex flex-col items-center space-y-[5vh]">
           <div className="w-full flex flex-col items-center space-y-[1vh]">
             <p className="text-[24px] text-black font-[700] ">
@@ -85,7 +85,7 @@ export function PhoneVerificationSignUp() {
               onChange={handlePhoneNumberChange}
             /> */}
             <button
-              className="mb-4 px-[1vw] py-[1vh] bg-blue-500 text-white font-[600] rounded-full hover:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105"
+              className="mb-4 px-[4vw] lg:px-[1vw] md:px-[1vw] xl:px-[1vw] 2xl:px-[1vw]  py-[1vh] bg-blue-500 text-white font-[600] rounded-full hover:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105"
               onClick={handleGenerateOTP}
             >
               Generate OTP
@@ -123,7 +123,7 @@ export function PhoneVerificationSignUp() {
                 {value === "" ? <>Enter your OTP</> : <></>}
                 <div className="w-full flex justify-center mt-[3vh]">
                   <Link href="/V1/RegistrationPage">
-                    <button className="bg-[#14A800] px-[1vw] py-[1vh] rounded-full text-white font-[700]">
+                    <button className="bg-[#14A800]  py-[1vh] rounded-full text-white font-[700]  px-[4vw] lg:px-[1vw] md:px-[1vw] xl:px-[1vw] 2xl:px-[1vw]">
                       Continue
                     </button>
                   </Link>
@@ -142,7 +142,7 @@ export function PhoneVerificationSignUp() {
           </div>
           <div className="w-full flex justify-center">
             <Link href="/V1/SignInPage">
-              <button className="border py-[1vh] px-[2vw] text-black font-[300] rounded-full">
+              <button className="border py-[1vh]  text-black font-[300] rounded-full  px-[6vw] lg:px-[2vw] md:px-[2vw] xl:px-[2vw] 2xl:px-[2vw] ">
                 Sign In
               </button>
             </Link>

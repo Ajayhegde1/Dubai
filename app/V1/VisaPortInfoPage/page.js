@@ -59,7 +59,7 @@ export default function VisaPortInfoPage() {
               Visa Information
             </h1>
           </div>
-          <div className="p-6">
+          <div className="lg:p-6 md:p-6 xl:p-6 2xl:p-6 p-4">
             {step === 1 && (
               <div className="mb-4">
                 <label className="block text-gray-700 font-bold mb-2">
@@ -94,7 +94,7 @@ export default function VisaPortInfoPage() {
             {step === 2 && (
               <div>
                 {hasPassport ? (
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className=" gap-4 grid lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 ">
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
                         Full Name:
@@ -123,11 +123,11 @@ export default function VisaPortInfoPage() {
                     </div>
                     <div className="mb-4">
                       <label className="block text-gray-700 font-bold mb-2">
-                        Passport Information:
+                        Passport Number:
                       </label>
                       <input
                         type="text"
-                        placeholder="Enter Passport Info"
+                        placeholder="Enter Passport No."
                         name="expirationDate"
                         value={passportData.expirationDate}
                         onChange={handleChange}
