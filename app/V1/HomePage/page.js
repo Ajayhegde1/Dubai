@@ -57,8 +57,8 @@ export default function HomePage() {
     SetIsMenuStopWatchOpen(!isMenuStopWatchOpen);
   };
   return (
-    <section className="overflow-hidden h-[100vh]">
-      <section className="w-full h-auto z-50 flex justify-center py-[10px]">
+    <section className="lg:overflow-hidden md:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden h-[100vh]">
+      <section className="w-full h-auto z-50 flex justify-center py-[10px] sticky top-0 bg-white ">
         <div className="md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] w-[100%] md:px-0 lg:px-0 xl:px-0 2xl:px-0 px-[2vw] flex justify-between items-center">
           <div className="flex gap-[10px]">
             <button
@@ -112,9 +112,9 @@ export default function HomePage() {
         <div
           className={`lg:w-[20vw] md:w-[20vw] ${
             isMenuOpen ? "opacity-100 w-full" : "opacity-0 w-0"
-          } xl:w-[20vw] 2xl:w-[20vw]  w-full lg:opacity-100 md:opacity-100 xl:opacity-100 2xl:opacity-100  h-[100vh] bg-gray-100 text-blue-950 lg:sticky md:sticky xl:sticky 2xl:sticky absolute z-50`}
+          } xl:w-[20vw] 2xl:w-[20vw]  w-full lg:opacity-100 md:opacity-100 xl:opacity-100 2xl:opacity-100  h-[100vh] bg-gray-100 text-blue-950 lg:sticky md:sticky xl:sticky 2xl:sticky fixed z-50 `}
         >
-          <section className="flex justify-center items-center h-[88vh]">
+          <section className="flex justify-center items-center h-[88vh] ">
             <section className="flex flex-col  rounded-lg bg-white border-2 border-gray-300 p-8 space-y-8  h-[98%] w-[95%]">
               <button onClick={openModalFlights} className="btn">
                 Flight Tickets
@@ -147,7 +147,7 @@ export default function HomePage() {
           </section>
         </div>
 
-        <div className=" feed-sec lg:w-[57vw] md:w-[57vw] xl:w-[57vw] 2xl:w-[57vw] w-full  overflow-y-auto  bg-[#F4F5F6] scrollbar-hidden py-[1vh]">
+        <div className=" feed-sec lg:w-[57vw] md:w-[57vw] xl:w-[57vw] 2xl:w-[57vw] w-full lg:h-[100vh] lg:overflow-y-auto md:h-[100vh] md:overflow-y-auto xl:h-[100vh] xl:overflow-y-auto 2xl:h-[100vh] 2xl:overflow-y-auto  bg-[#F4F5F6] scrollbar-hidden py-[1vh]">
           <section className="flex justify-center items-center h-auto">
             <section className="flex rounded-[20px] bg-white flex-col items-center h-auto w-[95%] border-[2px] py-[3vh]  gap-11 ">
               <InfoCard />
@@ -157,7 +157,7 @@ export default function HomePage() {
         </div>
         <div
           className={`lg:w-[23vw] md:w-[23vw] ${
-            isMenuStopWatchOpen ? "opacity-100 w-full" : "opacity-0 w-0"
+            isMenuStopWatchOpen ? " opacity-100 w-full" : "opacity-0 w-0"
           }  xl:w-[23vw] 2xl:w-[23vw] h-[100vh] bg-[#F4F5F6]  lg:opacity-100 md:opacity-100 xl:opacity-100 2xl:opacity-100 lg:relative md:relative xl:relative 2xl:relative absolute`}
         >
           <RightSideDiv />
