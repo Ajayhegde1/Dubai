@@ -59,7 +59,7 @@ export default function HomePage() {
   return (
     <section className="lg:overflow-hidden md:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden h-[100vh]">
       <section className="w-full h-auto z-50 flex justify-center py-[10px] sticky top-0 bg-white ">
-        <div className="md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] w-[100%] md:px-0 lg:px-0 xl:px-0 2xl:px-0 px-[2vw] flex justify-between items-center">
+        <div className="md:w-[95%] lg:w-[95%] xl:w-[95%] 2xl:w-[95%] w-[100%] md:px-0 lg:px-0 xl:px-0 2xl:px-0 px-[4vw] flex justify-between items-center">
           <div className="flex gap-[10px]">
             <button
               className="lg:hidden md:hidden xl:hidden 2xl:hidden"
@@ -81,7 +81,7 @@ export default function HomePage() {
               </svg>
             </button>
             <Image
-              className="lg:w-[16vw] md:w-[16vw] xl:w-[16vw] 2xl:w-[16vw] w-[50vw]"
+              className="lg:w-[8vw] md:w-[8vw] sm:w-[16vw] xl:w-[8vw] 2xl:w-[8vw] w-[25vw]"
               src={rotaryImg}
             />
           </div>

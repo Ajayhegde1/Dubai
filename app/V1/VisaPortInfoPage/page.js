@@ -28,12 +28,17 @@ export default function VisaPortInfoPage() {
     });
   };
 
+  const [applyForPassport, setApplyForPassport] = useState(true);
   const handleHasPassportChange = (e) => {
     setHasPassport(e.target.value === "yes");
   };
 
   const handleNextStep = () => {
-    setStep(step + 1);
+    if (!applyForPassport) {
+      setStep(5);
+    } else {
+      setStep(step + 1);
+    }
   };
   const handleApply = () => {
     setStep(5);
@@ -49,6 +54,9 @@ export default function VisaPortInfoPage() {
   if (saved) {
     return <SuccessScreen />;
   }
+  const handleApplyForPassportChange = (e) => {
+    setApplyForPassport(e.target.value === "yes");
+  };
   return (
     <>
       <NavBar />
@@ -89,6 +97,37 @@ export default function VisaPortInfoPage() {
                     <span className="ml-2">No</span>
                   </label>
                 </div>
+                {hasPassport === false && (
+                  <div className="mb-4">
+                    <label className="block text-gray-700 font-bold mb-2">
+                      Do you want Rotary to apply for a Visa?
+                    </label>
+                    <div>
+                      <label className="inline-flex items-center mr-4">
+                        <input
+                          type="radio"
+                          name="applyForPassport"
+                          value="yes"
+                          checked={applyForPassport === true}
+                          onChange={handleApplyForPassportChange}
+                          className="form-radio text-blue-500"
+                        />
+                        <span className="ml-2">Yes</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="radio"
+                          name="applyForPassport"
+                          value="no"
+                          checked={applyForPassport === false}
+                          onChange={handleApplyForPassportChange}
+                          className="form-radio text-blue-500"
+                        />
+                        <span className="ml-2">No</span>
+                      </label>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
             {step === 2 && (

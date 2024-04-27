@@ -26,14 +26,19 @@ export default function PassportInfoPage() {
       [name]: value,
     });
   };
-
+  const [applyForPassport, setApplyForPassport] = useState(true);
   const handleHasPassportChange = (e) => {
     setHasPassport(e.target.value === "yes");
   };
 
   const handleNextStep = () => {
-    setStep(step + 1);
+    if (!applyForPassport) {
+      setStep(5);
+    } else {
+      setStep(step + 1);
+    }
   };
+
   const handleApply = () => {
     setStep(5);
   };
@@ -41,7 +46,9 @@ export default function PassportInfoPage() {
   const handlePreviousStep = () => {
     setStep(step - 1);
   };
-
+  const handleApplyForPassportChange = (e) => {
+    setApplyForPassport(e.target.value === "yes");
+  };
   const handleSaveDetails = () => {
     setSaved(true);
   };
@@ -88,9 +95,40 @@ export default function PassportInfoPage() {
                     <span className="ml-2">No</span>
                   </label>
                 </div>
+                {hasPassport === false && (
+                  <div className="mb-4">
+                    <label className="block text-gray-700 font-bold mb-2">
+                      Do you want Rotary to apply for a passport?
+                    </label>
+                    <div>
+                      <label className="inline-flex items-center mr-4">
+                        <input
+                          type="radio"
+                          name="applyForPassport"
+                          value="yes"
+                          checked={applyForPassport === true}
+                          onChange={handleApplyForPassportChange}
+                          className="form-radio text-blue-500"
+                        />
+                        <span className="ml-2">Yes</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="radio"
+                          name="applyForPassport"
+                          value="no"
+                          checked={applyForPassport === false}
+                          onChange={handleApplyForPassportChange}
+                          className="form-radio text-blue-500"
+                        />
+                        <span className="ml-2">No</span>
+                      </label>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
-            {step === 2 && (
+            {step === 2 && applyForPassport && (
               <div>
                 {hasPassport ? (
                   <div className="grid lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1  gap-4">
@@ -204,6 +242,7 @@ export default function PassportInfoPage() {
                 )}
               </div>
             )}
+
             <div className="flex justify-between">
               {step > 1 && step != 3 && step != 5 && (
                 <button
